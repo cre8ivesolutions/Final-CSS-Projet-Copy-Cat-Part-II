@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    color: black;
+
+}
+aside {
+    flex-grow: 10;
+    margin: .5em;
+    
+}
+button {
+    background-color: white;
+    color: darkgray;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+div .container .top-page {
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.top-page {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    flex-direction: column;
+    
+    
+}
+.main_navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 3;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+  }
+.hero-image {
+    width: 100%;
+    max-width: 90%;
+}
