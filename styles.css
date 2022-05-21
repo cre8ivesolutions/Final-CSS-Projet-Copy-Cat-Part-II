@@ -15,19 +15,25 @@ button {
     margin: .5rem;
 }
 
-.container {
+.navbar {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
   }
-div .container .top-page {
+  .container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+div .container .top_navbar  {
     display: flex;
     width: 90%;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.top-page {
+.top-navbar {
     display: flex;
     width: 90%;
     flex-wrap: wrap;
@@ -37,7 +43,7 @@ div .container .top-page {
     
     
 }
-.main_navbar {
+.etsy_navbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -45,6 +51,7 @@ div .container .top-page {
     justify-content: space-between;
     align-items: center;
     min-height: 70vh;
+    
   }
 .hero-image {
     width: 100%;
