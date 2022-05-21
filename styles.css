@@ -1,15 +1,13 @@
-body {
-    background-color: white;
-    color: black;
-
-}
 aside {
     flex-grow: 10;
     margin: .5em;
-    
+}
+body {
+    background-color: green;
+    color: black;
 }
 button {
-    background-color: white;
+    background-color: orange;
     color: darkgray;
     padding: .5rem;
     margin: .5rem;
@@ -19,47 +17,53 @@ ul {
     margin: 0;
     padding: 0;
     display: column;
-
+    outline: 4px solid blue;
 }
-.navbar {
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* display: column; */
+}
+/* .navbar { */
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
   }
   .container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
     justify-content: space-between;
-  }
-div .container .top_navbar  {
+}
+div .container .navbar  {
     display: flex;
     width: 90%;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.top-navbar {
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .5rem;
-    flex-direction: column;
-    
-    
-}
 .etsy_navbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 3;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
     min-height: 70vh;
-    
-  }
+    outline: 4px solid red;
+}
 .hero-image {
     width: 100%;
-    max-width: 90%;
+    position: absolute;
+    display: inline-flex;
 }
+/* .nav_top { */
+    /* display: flex; */
+    /* width: 90%; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* gap: .5rem; */
+    /* flex-direction: column;  */
+    /* outline: 4px solid purple;  */
+    /* } */
