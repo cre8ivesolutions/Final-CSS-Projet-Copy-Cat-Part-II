@@ -1,113 +1,175 @@
 body {
-    background-color: white;
-    color: grey;
+        background-color: white;
+        color: black;
+        /* display: flex; */
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 2;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
 }
 button {
-    padding: .1rem;
-    margin: .5rem;
-    max-width: 60px;
-    max-height: 30px;
-    border-radius: 50;
-    column-span: 2;
-}
-ul > .etsy_navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: column;
-    outline: 4px solid blue;
-}
-li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: column;
+        padding: .5rem;
+        /* margin: .5rem; */
+        min-width: 98%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        /* max-height: 30px; */
+        border-radius:12px;
+        /* column-span: 2; */
+        outline: transparent;
+        background-color: transparent;
+        text-align: left;
+        color: darkgray;
+        font-size: x-small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 i {
-    margin: 0;
-    padding: 0;
+        margin-left: 2rem;
+        margin-right: 0;
+        align-self:flex-end;
+        padding: 0;
 }
-aside {
-    flex-grow: 10;
-    margin: .5em;
+ul {
+        display: flex;
+        list-style-type: none;
+        /* outline: 4px solid blue; */
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 1ch;
+        text-align: center;
+        max-width:max-content;
 }
-button > #searchbar {
+li {
+        list-style-type: none;
+}
+button > .searchbar {
     width: 50em;
-    flex-grow: 5;
-}
-#kohkoh_logo {
-    width: 5rem;
-    position:sticky;
-    z-index: 1;
+    align-self: flex-end;
+    text-align: left;
+    width: 75%;
     flex-grow: 1;
+    display: flex;
+}
+.bottom_navbar {
+    position: relative;
+    left: 30%;
+    right: 30%;
+    margin:-1em;
+    padding: 0;
+    z-index: 1;
+    top: -2em;
+    font-size: x-small;
 }
 .navbar {
     display: flex;
-    min-height: 10vh;
-    flex-direction: row;
+    /* min-height: 2vh; */
+    /* flex-direction: column; */
     justify-content: center;
     padding: 0;
     margin: 0;
     width: 90%;
+    align-items: stretch;
 }
-  .container {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-div .container .navbar  {
+div .navbar  {
     display: flex;
-    width: 90%;
-    flex-direction: row;
+    width: 95%;
+    /* flex-direction: row; */
+}
+.hero-image {
+    min-width: 95%;
+    flex-basis: 95%;
+    position: static;
+    display: inline-flex;
+    z-index: .5;
+    margin: auto;
 }
 .etsy_navbar {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    min-height: 70vh;
-    outline: 4px solid red;
-}
-.hero-image {
-    width: 95%;
-    position: static;
-    display: inline-flex;
+    /* max-height: 70vh; */
+    /* outline: 4px solid red; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 98%;
+    flex-basis: 98%;
+    flex-shrink:2;
+    column-gap: 1ch;
+    font-size: xx-small;
 }
 .nav_top {
-    padding-top: 1.5rem;
-    display: block;
-    width: 97%;
+    display: flex;
+    padding: .5rem;
     max-height: 10rem;
     flex-wrap:nowrap;
-    justify-content: space-between;
-    flex-direction: column; 
-    outline: 4px solid purple; 
+    justify-content: center;
+    font-size: small; 
+    /* outline: 4px solid purple;  */
     flex-direction: row;
-    flex-basis: 95%;
-    align-items: left;
+    flex-basis: 98%;
     flex-grow: 1;
-    text-align: left;
-
+    min-width: 98%;
+    column-gap: 2em;
+    /* white-space: 2; */
+}
+.announcement {
+    display: flex;
+    flex-basis: 98%;
+    flex-wrap: nowrap;
+    /* text-align: center; */
+    max-width: 98%;
+    flex-grow: 1;
+    /* white-space: pre; */
+    font-size: x-small;
+    margin-bottom: 0%;
     }
 #top-logo-etsy {
-        max-width: 5em;
-        flex-grow: inherit;
+    max-width: 4em;
+    flex-grow: 1;
+    margin-right: 14em;
+    margin-left: .5em;
+    align-items: left;
+    align-self: left;
+    position: relative;
+    right: 1rem;
+    margin-bottom: 0;
+}
+#kohkoh_logo {
+    position: relative;
+    left: 10%;
+    max-width: 5em;
+    text-align: center;
+    z-index: 1;
+    flex-grow: 2;
+    align-items: center;
+    border-radius: 15%;
+}
+/* @media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
+    #kohkoh_logo {
+        position:sticky bottom 20px;
+        hover: center;
     }
-@media (min-width: 600px) {
-        .container {
-          flex-direction: row;
-          flex-wrap: wrap;
-        } 
-        #kohkoh_logo {
-            position:sticky bottom 20px;
-            hover: center;
-        }
-        .hero-image {
-            z-index: .5;
-            position: bottom 50rem;
-
-        }
-    }
+    .hero-image {
+        z-index: .5;
+        position: bottom 50rem;
+        
+    } */
+/* #searchbar {
+    flex-basis: 98%;
+    min-width: 98%;
+    align-self: center;
+    text-align: left;
+    color: darkgray;
+    padding: .75em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
+} */
